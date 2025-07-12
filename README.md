@@ -4,32 +4,32 @@ This repository explores a minimalist and educational simulation of **Large Lang
 
 ---
 
-## 📆 Features
+## Features
 
-- 🚀 Simulated **Pipeline Parallelism** across model layers
-- 🧹 Lightweight **Fully Sharded Data Parallelism (FSDP)** across weight shards
-- 🔀 Gradient accumulation across multiple microbatches
-- 📡 Simulated asynchronous communication (`pass_to`, `receive`, `allgather`)
-- 🧠 Layer and rank-aware compute distribution
-- ✅ Optimizer update step after backpropagation
-- 🧪 Torch-free implementation — great for algorithm visualization
-- 📆 Rank decomposition across shards and layers
-- ⚖️ Model-parallel and data-parallel hybrid execution
-- 🔜 Manual forward/backward pass orchestration
-- 🔢 Weight sharding and merging with `allgather`
-- 📊 Basic loss and gradient computation + update step
-- 🔄 Manual microbatch-based gradient accumulation
-- 🌐 Pipeline communication across pipeline stages
-- 🛋️ Memory optimization via sharding and delayed allgather
-- 💪 Simulation of FSDP-style allgather and shard logic
-- ⏳ Asynchronous scheduling and communication of activations and gradients
+- Simulated **Pipeline Parallelism** across model layers
+- Lightweight **Fully Sharded Data Parallelism (FSDP)** across weight shards
+- Gradient accumulation across multiple microbatches
+- Simulated asynchronous communication (`pass_to`, `receive`, `allgather`)
+- Layer and rank-aware compute distribution
+- Optimizer update step after backpropagation
+- Torch-free implementation — great for algorithm visualization
+- Rank decomposition across shards and layers
+- Model-parallel and data-parallel hybrid execution
+- Manual forward/backward pass orchestration
+- Weight sharding and merging with `allgather`
+- Basic loss and gradient computation + update step
+- Manual microbatch-based gradient accumulation
+- Pipeline communication across pipeline stages
+- Memory optimization via sharding and delayed allgather
+- Simulation of FSDP-style allgather and shard logic
+- Asynchronous scheduling and communication of activations and gradients
 
 
 ---
 
-## 🛠 Core Concepts
+## Core Concepts
 
-### ✅ `pipeline_fsdp(model: Model)`
+### `pipeline_fsdp(model: Model)`
 
 The main async training loop simulates:
 
@@ -56,7 +56,7 @@ The main async training loop simulates:
 
 ---
 
-## 🤩 Techniques Implemented
+## Techniques Implemented
 
 - Layer and shard-based rank decomposition
 - Forward pipeline execution using simulated async messaging
@@ -75,7 +75,7 @@ The main async training loop simulates:
 
 ---
 
-## 📜 Educational Value
+## Educational Value
 
 This repo is excellent for:
 
