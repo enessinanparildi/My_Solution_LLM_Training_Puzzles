@@ -1,4 +1,4 @@
-# 🔧 LLM Training Puzzles: Pipeline + FSDP Simulation
+# 🔧 Multi-GPU LLM Training Puzzles: Pipeline + FSDP Simulation
 
 This repository explores a minimalist and educational simulation of **Large Language Model (LLM)** training using **Pipeline Parallelism** and **Fully Sharded Data Parallel (FSDP)**. Designed as a learning tool, it breaks down complex training infrastructure into simple distributed async functions, making it ideal for studying model-parallel techniques in LLM training. The puzzles were originally developed by srush(https://github.com/srush).
 
